@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "macho-diff"
+version = "0.1.0"
+description = "A command-line tool for visual instruction-level differences between Mach-O binaries."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "capstone>=5.0.7",
+    "lief>=0.17.6",
+]
+
+[project.scripts]
+macho-diff = "macho_diff.cli:main"
+
+[tool.setuptools]
+packages = ["macho_diff"]
+
+[dependency-groups]
+dev = [
+    "pylint>=4.0.5",
+    "ruff>=0.15.13",
+]
