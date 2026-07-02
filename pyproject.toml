@@ -22,5 +22,5 @@ packages = ["macho_diff"]
 [dependency-groups]
 dev = [
     "pylint>=4.0.6",
-    "ruff>=0.15.19",
+    "ruff>=0.15.20",
 ]
