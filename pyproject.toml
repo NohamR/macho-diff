@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "capstone>=5.0.9",
-    "lief>=0.17.6",
+    "lief>=1.0.0",
 ]
 
 [project.scripts]
